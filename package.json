@@ -1,0 +1,104 @@
+{
+  "name": "scan",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "ant-design-vue": "^1.7.8",
+    "base58-js": "^1.0.5",
+    "bech32": "^2.0.0",
+    "bignumber.js": "^9.0.1",
+    "core-js": "^3.6.5",
+    "echarts": "^5.2.2",
+    "highlight.js": "^10.4.1",
+    "json-bigint": "^1.0.0",
+    "klinecharts": "^8.6.1",
+    "web3-utils": "1.9.0",
+    "vue": "^2.6.11",
+    "vue-class-component": "^7.2.3",
+    "vue-clipboard2": "^0.3.3",
+    "vue-property-decorator": "^9.1.2",
+    "vue-router": "^3.2.0"
+  },
+  "devDependencies": {
+    "axios": "^0.21.1",
+    "@dfinity/agent": "^0.19.2",
+    "@dfinity/auth-client": "^0.19.2",
+    "@dfinity/authentication": "0.14.2",
+    "@dfinity/candid": "^0.19.2",
+    "@dfinity/identity": "^0.19.2",
+    "@dfinity/principal": "^0.19.2",
+    "@typescript-eslint/eslint-plugin": "^4.18.0",
+    "@typescript-eslint/parser": "^4.18.0",
+    "@noble/hashes": "^1.3.1",
+    "@vue/cli-plugin-babel": "~4.5.12",
+    "@vue/cli-plugin-eslint": "~4.5.12",
+    "@vue/cli-plugin-router": "~4.5.12",
+    "@vue/cli-plugin-typescript": "~4.5.12",
+    "@vue/cli-service": "~4.5.12",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/eslint-config-typescript": "^7.0.0",
+    "crc": "^3.8.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^6.2.2",
+    "node-sass": "^4.11.0",
+    "prettier": "^2.2.1",
+    "sass-loader": "^10.1.0",
+    "sass-resources-loader": "^2.0.0",
+    "style-resources-loader": "^1.4.1",
+    "typescript": "~4.1.5",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended",
+      "@vue/typescript/recommended",
+      "@vue/prettier",
+      "@vue/prettier/@typescript-eslint"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2020
+    },
+    "rules": {
+      "@typescript-eslint/no-var-requires": 0,
+      "@typescript-eslint/no-explicit-any": [
+        "off"
+      ],
+      "@typescript-eslint/ban-ts-comment": "off",
+      "@typescript-eslint/ban-types": [
+        "error",
+        {
+          "extendDefaults": true,
+          "types": {
+            "{}": false
+          }
+        }
+      ],
+      "no-debugger": "off"
+    }
+  },
+  "browserslist": {
+    "production": [
+      "last 2 chrome version",
+      "last 2 firefox version",
+      "last 2 safari version",
+      "last 2 edge version"
+    ],
+    "development": [
+      "last 2 chrome version",
+      "last 2 firefox version",
+      "last 2 safari version",
+      "last 2 edge version"
+    ]
+  }
+}
